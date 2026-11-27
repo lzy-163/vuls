@@ -20,8 +20,9 @@ on:
   schedule:
     - cron: '32 20 * * 0'
 
-permissions: 
-  contents: read  
+permissions:
+  contents: read
+  security-events: write
 jobs:
   analyze:
     name: Analyze
@@ -59,10 +60,10 @@ jobs:
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
 
-    # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 https://git.io/JvXDl
+    # 鈩癸笍 Command-line programs to run using the OS shell.
+    # 馃摎 https://git.io/JvXDl
 
-    # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
+    # 鉁忥笍 If the Autobuild fails above, remove it and uncomment the following three lines
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
